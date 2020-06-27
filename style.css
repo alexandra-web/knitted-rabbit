@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Vidaloka&display=swap');
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.555;
+    color: #3A302B;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+	}
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary {display: block;} 
+
+
+a {	text-decoration: none;
+	color: #3A302B;}
+
+li {list-style-type: none;}
+
+.body-center {
+	width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #F8F6F5;
+	box-shadow: 0 0 10px 3px rgba(58, 48, 43, 0.1);
+}
+
+.hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.container {
+  width: 1077px;
+  margin: 0 auto; 
+}
+
+.main-catalog, .main-order, .main-about, .main-slider, .main-description {
+	width: 1077px;
+  	margin: 0 auto;
+  	margin-bottom: 130px;
+}
+
+/*Хедер*/
+.main-header {
+	margin: 0 auto;
+	padding: 30px 0 100px;
+}
+
+/*1 уровень навигации*/
+.navigation {
+	display: flex;
+	margin: 0 auto;
+	width: 1077px;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+/*2 уровень навигации*/
+.main-navigation {margin: 0 auto;}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	width: 517px;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*Поле поиска*/
+.search-form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 6px 10px rgba(58, 48, 43, 0.1);
+}
+
+.search-form input {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: rgba(58, 48, 43, 0.5);
+}
+.search-form button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 48px;
+  height: 40px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(58, 48, 43, 0.1);
+  background: url("img/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*User-navigation*/
+.user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	width: 182px;
+}
+
+.user-navigation .come-in {margin-right: 30px;}
+
+.user-navigation .bag {display: flex;}
+
+.user-navigation .bag::before {
+  	content: "";
+  	width: 29px;
+  	height: 24px;
+  	background-image: url("img/shopping-bag.png");
+  	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/*Слайдер*/
+.main-slider {margin-bottom: 0;}
+
+.slider {
+	width: 900px;
+	margin: 0 auto;
+	margin-bottom: 130px;
+}
+
+.slide-1 {
+	padding: 30px;
+	background-image: url(img/slide-1.png);
+	width: 900px;
+	height: 600px;
+	line-height: 1030px;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+/*О магазине*/
+.main-about {width: 900px;}
+
+/*Каталог*/
+.catalog {
+	height: 720px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-column1, .catalog-column2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*На заказ*/
+
+h2 {
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 50px;
+}
+
+/*Шаги заказа*/
+.order-description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.order-step-description {
+	margin: 0;
+	padding: 0 0 100px 0;
+	width: 1080px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.order-step-description li {
+	display: flex;
+	align-items: center;
+}
+
+.number {
+	font-family: 'Vidaloka', serif;
+	font-size: 2.8125em;
+	margin: 0 20px 0 0;
+}
+
+/*Описание заказа*/
+
+.order-description {
+	display: flex;
+}
+
+.order-text-description {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.order-text-description li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 87px;
+}
+
+.order-text-description li:last-child {
+	margin-bottom: 0;
+}
+
+.order-text-description li img {
+	margin-right: 50px;
+}
+
+.order-text-description li p {
+	margin: 0;
+}
+
+/*Описание магазина2*/
+.main-description {
+	display: flex;
+	justify-content: space-between;
+	width: 1080px;
+}
+
+/*Футер*/
+.main-footer {
+	background-color: #8491A3;
+}
+
+.footer-navigation {
+	width: 815px;
+	margin: 0 auto;
+	padding: 34px 0 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-list {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+.footer-list li a {
+	color: rgb(251, 251, 251);
+}
+
+.footer-list li {
+	padding: 0 0 10px;
+	color: rgb(251, 251, 251);
+}
+
+.footer-caption {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0; 
+	padding: 0 0 16px;
+}
+
+.footer-copy {
+	text-align: center;
+	padding-bottom: 10px;
+	color: rgb(251, 251, 251);
+	font-size: 12px;
+}
+
+.social-icon a:first-child {
+	margin-right: 12px;
+}
+
+.pay-method {
+	display: flex;
+	justify-content: space-between;
+}
